@@ -19,7 +19,7 @@ function displayResults(responseJson) {
         }
         else {
             $('.results h2').html(`Here's a ${doggoBreed}`);
-            html += `<img src="${responseJson.message[i]}" />`
+            html += `<img src="${responseJson.message[i]}" class="dog-image" />`
         }
         $('.results-img').html(html)
         $('.results').removeClass('hidden');
